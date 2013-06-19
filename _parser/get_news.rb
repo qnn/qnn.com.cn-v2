@@ -8,7 +8,7 @@ require 'reverse_markdown'
 news_dir = "../news/_posts"
 
 begin
-  count = 0
+  #count = 0
   db = SQLite3::Database.open "database"
   stm = db.prepare "SELECT `id` FROM `8html_qnn_arctype` WHERE `topid`=6"
   rs = stm.execute
@@ -26,6 +26,7 @@ begin
     FileUtils.mkpath posts_dir if !File.directory?(posts_dir)
     pubdate = Time.at(row[7]).strftime("%Y-%m-%d")
     open("#{posts_dir}/#{pubdate}-qnn-news#{row[3]}.md", "w") do |f|
+      row[0].gsub!(/\[(.+?)\]/,"\\1")
       row[2].gsub!("\n","")
       body = row[4].gsub(/"\.\.\/.+?image-pro/,"\"%PRODIMGS%")
       body = ReverseMarkdown.parse body
@@ -42,8 +43,8 @@ description: #{row[2]}
 #{body}
 content
     end
-    count = count + 1
-    exit if count > 10
+    #count = count + 1
+    #exit if count > 10
   end
 rescue SQLite3::Exception => e
   puts "Exception occurred."
