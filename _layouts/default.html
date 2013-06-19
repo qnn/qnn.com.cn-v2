@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie6"><![endif]-->
+<!--[if IE 7 ]><html class="ie7"><![endif]-->
+<!--[if IE 8 ]><html class="ie8"><![endif]-->
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html><!--<![endif]-->
+{%capture page_title %}
+{% if page.title %}{{ page.title }}-{% endif %}{{ site.title }}
+{% endcapture %}
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>{{ page_title | strip_newlines | remove:'	' }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=0.75" />
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}" />
+<link href="/stylesheets/main.css" rel="stylesheet" />{% for item in page.more_css %}
+<link href="{{ item }}" rel="stylesheet" />{% endfor %}
+<script type="text/javascript" src="/javascripts/jquery.js"></script>
+<script type="text/javascript" src="/javascripts/slider.js"></script>{% for item in page.more_scripts %}
+<script src="{{ item }}"></script>{% endfor %}
+<script type="text/javascript" src="/javascripts/loadp.js"></script>
+</head>
+<body class="gh">
+<div id="wrapper" style="height: 800px;">
+	<div id="header">
+		<div class="header1">
+			<a class="logo" href="{{ site.url }}/" title="全能保险柜">全能保险柜</a>
+		</div>
+		<div class="header2">
+			<a href="{{ site.url }}/">中文</a>/<a href="http://www.qnnsafes.com/">English</a>
+		</div>
+		<div class="header3">
+			全国服务热线：400-830-4555<br />
+			快速查询离您最近的<a href="{{ site.url }}/stores/">全能销售网点</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="menu">
+		<a id="lnkper" class="mi1 sepr">个人及家庭用户</a><span class="sepr"></span>
+		<a id="lnkper2" class="mi1 sepr">商用及企业用户</a><span class="sepr"></span>
+		<a href="{{ site.url }}/about/" class="mi2 sepr">全能简介</a><span class="sepr"></span>
+		<a href="{{ site.url }}/innovation/" class="mi4 sepr">创新中心</a><span class="sepr"></span>
+		<a href="{{ site.url }}/cases/" class="mi4">工程案例</a><span class="sepr"></span>
+		<a href="{{ site.url }}/support/" class="mi3">服务与支持</a><span class="sepr"></span>
+		<a href="{{ site.url }}/franchise/" class="mi4">招商加盟</a><span class="sepr"></span>
+		<a href="{{ site.url }}/stores/" class="mi4">销售网点</a><span class="sepr"></span>
+	</div>
+	<div class="clear"></div>
+	<div id="fredbar" class="redbar"> </div>
+	<div id="menupop" class="hidden">
+		<div id="redbar" class="redbar">
+			<ul>
+				<li>企业家</li>
+				<li>商务精英</li>
+				<li>时尚白领</li>
+				<li>小康之家</li>
+				<li>单身贵族</li>
+			</ul>
+		</div>
+		<div id="panel" class="panelc">
+			<ul id="panelper" class="panel">
+				<li class="pl pf">
+				<div class="ps">
+					<div class="psc">
+					<a class="pc pc8" href="{{ site.url }}/bw-6960.html" title="全能保险柜风生水起系列">风生水起</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/bw-6960.html" title="家用保险柜BW-6960">BW-6960</a></li>
+					</ul>
+					<div class="pe"></div>
+					<a class="pc pc11" href="{{ site.url }}/cs-2018d.html" title="全能保险柜安固系列">安固</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/cs-2018d.html" title="CS-2018D保险柜十大品牌">CS-2018D</a></li>
+						<li><a href="{{ site.url }}/cs-2221d.html" title="保险柜CS-2221D">CS-2221D</a></li>
+						<li><a href="{{ site.url }}/cs-2520c.html" title="家用保险箱CS-2520C">CS-2520C</a></li>
+						<li><a href="{{ site.url }}/cs-4021c.html" title="保险箱CS-4021C">CS-4021C</a></li>					
+					</ul>
+					<div class="pe"></div>
+					<a class="pc pc7" href="{{ site.url }}/b-4538.html" title="全能保险柜全能金库系列">全能金库</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/b-4538.html" title="保险箱B-4538">B-4538</a></li>
+						<li><a href="{{ site.url }}/b-5440.html" title="家用保险柜B-5440">B-5440</a></li>
+						<li><a href="{{ site.url }}/b-7348.html" title="保险柜B-7348">B-7348</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="ps">
+					<div class="psc">
+					<a class="pc pc10" href="{{ site.url }}/cw-7348.html" title="全能保险柜藏宝系列">藏宝</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/cw-7348.html" title="保险柜十大品牌CW-7348">CW-7348</a></li>
+					</ul>
+					<div class="pe"></div>
+					<a class="pc pc9" href="{{ site.url }}/zf-4538br.html" title="全能保险柜指纹系列">指纹</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/zf-4538br.html" title="保险箱ZF-4538R">ZF-4538R</a></li>
+						<li><a href="{{ site.url }}/zf-4938br.html" title="家用保险柜ZF-4938R">ZF-4938R</a></li>
+					</ul>
+				</div>
+			</div>
+			</li>
+			<li class="pl pf">
+				<div class="ps">
+					<div class="psc">
+					<a class="pc pc15" href="{{ site.url }}/gtx-3345.html" title="全能保险柜钢铁侠系列">钢铁侠</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/gtx-3345.html" title="保险柜十大品牌GTX-3345">GTX-3345</a></li>
+						<li><a href="{{ site.url }}/gtx-4542.html" title="保险柜GTX-4542">GTX-4542</a></li>
+						<li><a href="{{ site.url }}/gtx-5842.html" title="家用保险箱GTX-5842">GTX-5842</a></li>
+						<li><a href="{{ site.url }}/gtx-6845.html" title="保险柜GTX-6845">GTX-6845</a></li>
+					</ul>
+					<div class="pe"></div>
+					<a class="pc pc13" href="{{ site.url }}/hg-2740.html" title="全能保险柜新皇冠系列">新皇冠</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/hg-2740.html" title="保险柜HG-2740">HG-2740</a></li>
+						<li><a href="{{ site.url }}/hg-3342.html" title="HG-3342十大保险柜品牌">HG-3342</a></li>
+						<li><a href="{{ site.url }}/hg-4538.html" title="家用保险箱HG-4538">HG-4538</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="ps">
+					<div class="psc">
+					<a class="pc pc12" href="{{ site.url }}/tgg-2040br.html" title="全能保险柜铁金刚系列">铁金钢</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/tgg-2040br.html" title="保险箱TGG-2040R">TGG-2040R</a></li>
+						<li><a href="{{ site.url }}/tgg-2045br.html" title="保险柜TGG-2045R">TGG-2045R</a></li>
+						<li><a href="{{ site.url }}/tgg-2740br.html" title="家用保险箱TGG-2740R">TGG-2740R</a></li>
+						<li><a href="{{ site.url }}/tgg-3342br.html" title="家用保险柜TGG-3342R">TGG-3342R</a></li>
+						<li><a href="{{ site.url }}/tgg-4538br.html" title="十大保险柜品牌TGG-4538R">TGG-4538R</a></li>
+						<li><a href="{{ site.url }}/tgg-4938br.html" title="家用保险柜TGG-4938R">TGG-4938R</a></li>
+					</ul>
+				</div>
+			</div>
+			</li>
+			<li class="pl pf">
+				<div class="ps">
+					<div class="psc">
+					<a class="pc pc16" href="{{ site.url }}/kl-4045.html" title="全能保险柜可拉珍藏系列">可拉珍藏</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/kl-4045.html" title="保险柜KL-4045">KL-4045</a></li>
+						<li><a href="{{ site.url }}/dm-185640.html" title="家用保险柜DM-185640">DM-185640</a></li>
+					</ul>
+					<div class="pe"></div>
+					<a class="pc pc14" href="{{ site.url }}/glf-3340.html" title="全能保险柜高尔夫系列">高尔夫</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/glf-3340.html" title="保险箱GLF-3340">GLF-3340</a></li>
+						<li><a href="{{ site.url }}/glf-4540.html" title="保险柜GLF-4540">GLF-4540</a></li>
+						<li><a href="{{ site.url }}/glf-5842.html" title="家用保险柜GLF-5842">GLF-5842</a></li>
+						<li><a href="{{ site.url }}/glf-7042.html" title="家用保险箱GLF-7042">GLF-7042</a></li>
+						<li><a href="{{ site.url }}/glf-7550.html" title="保险柜十大品牌GLF-7550">GLF-7550</a></li>
+					</ul>
+					<div class="pe"></div>
+					<a class="pc pc21" href="{{ site.url }}/es-2318w.html" title="全能保险柜嵌墙系列">嵌墙</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/es-2318w.html" title="家用保险箱ES-2318W">ES-2318W</a></li>
+						<li><a href="{{ site.url }}/ws-108.html" title="保险柜WS-108">WS-108</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="ps">
+					<div class="psc">
+					<a class="pc pc17" href="{{ site.url }}/asafe.html" title="全能保险柜苹果系列">苹果</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/asafe.html" title="asafe保险柜十大品牌">asafe</a></li>
+					</ul>
+					<div class="pe"></div>
+					<a class="pc pc23" href="{{ site.url }}/mi-2045.html" title="全能保险柜珍藏系列">珍藏</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/mi-2045.html" title="保险柜MI-2045">MI-2045</a></li>
+						<li><a href="{{ site.url }}/itg-2040.html" title="保险柜ITG-2040">ITG-2040</a></li>
+						<li><a href="{{ site.url }}/itg-3342.html" title="保险箱ITG-3342">ITG-3342</a></li>
+						<li><a href="{{ site.url }}/itg-5840.html" title="家用保险箱ITG-5840">ITG-5840</a></li>
+						<li><a href="{{ site.url }}/sk-2045.html" title="家用保险箱SK-2045">SK-2045</a></li>
+						<li><a href="{{ site.url }}/bgx-5840.html" title="BGX-5840保险柜十大品牌">BGX-5840</a></li>
+						<li><a href="{{ site.url }}/cm-2045.html" title="保险柜CM-2045">CM-2045</a></li>
+					</ul>
+				</div>
+			</div>
+			</li>
+			<li class="pl pf">
+				<div class="ps">
+					<div class="psc">
+					<a class="pc pc20" href="{{ site.url }}/fg-2940br.html" title="全能保险柜钢将军系列">钢将军</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/fg-2940br.html" title="保险箱FG-2940R">FG-2940R</a></li>
+						<li><a href="{{ site.url }}/fg-3542br.html" title="保险柜FG-3542R">FG-3542R</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="ps">
+					<div class="psc">
+					<a class="pc pc18" href="{{ site.url }}/sjb-40br.html" title="全能保险柜铁管家系列">铁管家</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/sjb-40br.html" title="保险柜SJB-40ⅢR">SJB-40ⅢR</a></li>
+						<li><a href="{{ site.url }}/sjb-40hbr.html" title="保险柜SJB-40HⅢR">SJB-40HⅢR</a></li>
+						<li><a href="{{ site.url }}/sjb-43br.html" title="保险箱SJB-43ⅢR">SJB-43ⅢR</a></li>
+						<li><a href="{{ site.url }}/sjb-48br.html" title="保险箱SJB-48ⅢR">SJB-48ⅢR</a></li>
+						<li><a href="{{ site.url }}/sjb-52br.html" title="家用保险柜SJB-52ⅢR">SJB-52ⅢR</a></li>
+						<li><a href="{{ site.url }}/sjb-53br.html" title="SJB-53ⅢR保险柜十大品牌">SJB-53ⅢR</a></li>
+						<li><a href="{{ site.url }}/sjb-58br.html" title="保险柜十大品牌SJB-58ⅢR">SJB-58ⅢR</a></li>
+						<li><a href="{{ site.url }}/sjb-1630br.html" title="保险柜SJB-1630R">SJB-1630R</a></li>
+						<li><a href="{{ site.url }}/sjb-2243br.html" title="家用保险箱SJB-2243R">SJB-2243R</a></li>
+						<li><a href="{{ site.url }}/sjb-3236br.html" title="保险柜十大品牌SJB-3236R">SJB-3236R</a></li>
+					</ul>
+				</div>
+			</div>
+			</li>
+			<li class="pl">
+				<div class="ps">
+					<div class="psc">
+					<a class="pc pc19" href="{{ site.url }}/bgx-d-40jl.html" title="全能保险柜蓝精灵系列">蓝精灵</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/bgx-d-40jl.html" title="家用保险柜BGX-D-40JL">BGX-D-40JL</a></li>
+						<li><a href="{{ site.url }}/bgx-d-47jl.html" title="保险柜BGX-D-47JL">BGX-D-47JL</a></li>
+						<li><a href="{{ site.url }}/bgx-d-52jl.html" title="保险柜BGX-D-52JL">BGX-D-52JL</a></li>
+						<li><a href="{{ site.url }}/bgx-d-63jl.html" title="保险箱BGX-D-63JL">BGX-D-63JL</a></li>
+						<li><a href="{{ site.url }}/bgx-d-73jl.html" title="家用保险柜BGX-D-73JL">BGX-D-73JL</a></li>
+						<li><a href="{{ site.url }}/bgx-d-80jl.html" title="家用保险柜BGX-D-80JL">BGX-D-80JL</a></li>
+						<li><a href="{{ site.url }}/bgx-d-s80jl.html" title="保险柜十大品牌BGX-D-S80JL">BGX-D-S80JL</a></li>
+						<li><a href="{{ site.url }}/bgx-d-100jl.html" title="保险柜BGX-D-100JL">BGX-D-100JL</a></li>			
+					</ul>
+				</div>
+			</div>
+			<div class="ps">
+					<div class="psc">
+					<a class="pc pc24" href="{{ site.url }}/cki-253525.html" title="全能保险柜逸动系列">逸动</a>
+						<ul class="pi">
+						<li><a href="{{ site.url }}/cki-253525.html" title="保险柜CKI-253525">CKI-253525</a></li>
+						<li><a href="{{ site.url }}/ct-1211.html" title="保险箱CT-1211">CT-1211</a></li>
+						<li><a href="{{ site.url }}/ct-4013.html" title="保险柜十大品牌CT-4013">CT-4013</a></li>
+						<li><a href="{{ site.url }}/mg-2045.html" title="保险柜MG-2045">MG-2045</a></li>
+						<li><a href="{{ site.url }}/bgx-2535.html" title="家用保险柜BGX-2535">BGX-2535</a></li>
+						<li><a href="{{ site.url }}/qn-2043.html" title="保险柜QN-2043">QN-2043</a></li>
+						<li><a href="{{ site.url }}/dm-2146.html" title="家用保险柜DM-2146">DM-2146</a></li>
+					</ul>
+				</div>
+			</div>
+			</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="redbar rbst">浏览全能全线产品</div>
+	</div>
+	<div id="menupop2" class="hidden">
+		<div id="redbar2" class="redbar2">
+			<ul>
+				<li class="xl3">商用系列</li>
+				<li class="xl2">办公系列</li>
+				<li class="xl2">金融系列</li>
+				<li class="xl2">枪弹系列</li>
+				<li class="xl2">酒店系列</li>
+				<li class="xl2">储物系列</li>
+				<li class="xl2">物流系列</li>
+			</ul>
+		</div>
+		<div id="panel2" class="panelc">
+			<ul id="panelper2" class="panel">
+				<li class="pl3 pf">
+				<div class="ps">
+					<div class="psc">
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/b-7348.html" title="家用保险柜全能金库系列">全能金库</a></div>
+					<div class="pc_r">双人密码<br />防火防盗</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/bw-6960.html" title="家用保险箱风生水起系列">风生水起</a></div>
+					<div class="pc_r">聚财兴旺<br />进宝升官</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/zf-4938br.html" title="保险柜指纹系列">指纹</a></div>
+					<div class="pc_r">安全智能<br />一指掌控</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/zcw-7348.html" title="保险箱藏宝系列">藏宝</a></div>
+					<div class="pc_r">防潮除湿<br />安全放心</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/cs-4021c.html" title="保险柜十大品牌安固系列">安固</a></div>
+					<div class="pc_r">防火防盗<br />复合保固</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/fpc-3040sc.html" title="全能保险柜铁观音防火系列">铁观音防火</a></div>
+					<div class="pc_r">耐高温<br />防火防盗</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/tgg-5840br.html"  title="全能保险柜铁金刚系列">铁金钢</a></div>
+					<div class="pc_r">成功自信<br />典范之作</div>
+				</div>
+			</div>
+			<div class="ps">
+					<div class="psc">
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/hg-5840.html">新皇冠</a></div>
+					<div class="pc_r">时尚大方<br />商业首选</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/glf-8550.html">高尔夫</a></div>
+					<div class="pc_r">双重防护<br />精准防撬</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/gtx-9050.html">钢铁侠</a></div>
+					<div class="pc_r">灵动圆弧<br />双重锁控</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/sjb-72br.html">铁管家</a></div>
+					<div class="pc_r">经典之作<br />防盗安全</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/fg-100br.html">钢将军</a></div>
+					<div class="pc_r">办公畅销<br />钢铁将军</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/if-2500c.html">地藏</a></div>
+					<div class="pc_r">方便灵活<br />安全防护</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/bgx-d-s80jl.html">蓝精灵</a></div>
+					<div class="pc_r">多重防护<br />安全至尊</div>
+				</div>
+			</div>
+			</li>
+			<li class="pl2 pf">
+				<div class="ps2">
+					<div class="psc">
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/za-18090.html">维纳斯</a></div>
+					<div class="pc_r">指纹保密<br />安全防护</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/bmg-7545ab.html">双开门</a></div>
+					<div class="pc_r">经典畅销<br />保密安全</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/frd-21.html">抽屉式</a></div>
+					<div class="pc_r">防火防磁<br />防潮防盗</div>
+				</div>
+			</div>
+			</li>
+			<li class="pl2 pf">
+				<div class="ps2">
+					<div class="psc">
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/jkm(m)-1020-n.html">金库门</a></div>
+					<div class="pc_r">多级防护<br />结构牢固</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/ydjk.html">移动金库</a></div>
+					<div class="pc_r">可拆可移<br />防火防盗</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/yhbgg.html">银行保管箱</a></div>
+					<div class="pc_r">多门保管<br />智能防盗</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/xjtbj.html">现金投包机</a></div>
+					<div class="pc_r">大额投放<br />防钻防割</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/atm.html">ATM柜员机</a></div>
+					<div class="pc_r">结构牢固<br />开启灵活</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/bp-6747.html">油站投币柜</a></div>
+					<div class="pc_r">坚固耐用<br />高强防盗</div>
+				</div>
+			</div>
+			</li>
+			<li class="pl2 pf">
+				<div class="ps2">
+					<div class="psc">
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/fg-6024f.html">枪弹柜</a></div>
+					<div class="pc_r">人脸识别<br />全程记录</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/dyg.html">弹药柜</a></div>
+					<div class="pc_r">智能盘点<br />远程审批</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/znqdg.html">智能枪弹柜</a></div>
+					<div class="pc_r">全程记录<br />远程审批</div>
+				</div>
+			</div>
+			</li>
+			<li class="pl2 pf">
+				<div class="ps2">
+					<div class="psc">
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/sk-2045zh.html">QNNSAFE客房柜</a></div>
+					<div class="pc_r">时尚安全<br />品质首选</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/ct-4013me.html">HOTSAFE客房柜</a></div>
+					<div class="pc_r">智能查询<br />灵活方便</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/h-06.html">前厅保管箱</a></div>
+					<div class="pc_r">双重防护<br />多门组合</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/f-3214ccee.html">前厅投币柜</a></div>
+					<div class="pc_r">坚固耐用<br />高强防盗</div>
+				</div>
+			</div>
+			</li>
+			<li class="pl2 pf">
+				<div class="ps2">
+					<div class="psc">
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/znbmg.html">保密柜</a></div>
+					<div class="pc_r">人脸识别<br />多重防护</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/ic-cwg.html">寄存柜</a></div>
+					<div class="pc_r">多种样式<br />方便保管</div>
+					<div class="clear"></div>
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/gyk-ycg.html">钥匙柜</a></div>
+					<div class="pc_r">储物防盗<br />安全智能</div>
+				</div>
+			</div>
+			</li>
+			<li class="pl2">
+				<div class="ps2">
+					<div class="psc">
+					<div class="pc_l"><a class="pa" href="{{ site.url }}/wlcqg.html">存取柜</a></div>
+					<div class="pc_r">智能系统<br />行业首选</div>
+				</div>
+			</div>
+			</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+		<div class="redbar rbst">浏览全能全线产品</div>		
+	</div>
+{{ content }}
+	<div class="flbar mt10px">
+		<div class="fl_l">
+			快速查询离您最近的<a href="{{ site.url }}/stores/">全能销售店面和维修网点</a>
+		</div>
+		<div class="fl_r">
+			<a href="{{ site.url }}/survey.php">满意度调查</a> | <a href="{{ site.url }}/about/">关于全能</a> | <a href="{{ site.url }}/news/">新闻中心</a> | <a href="{{ site.url }}/join/">工作机会</a> | <a href="{{ site.url }}/contact/">联系我们</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+	<div class="footer mt10px">
+		<div class="fo_l">
+			版权所有 &copy; 1999-2012 广东安能保险柜制造有限公司 <a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备05038637号-1</a><br />
+			<a href="{{ site.url }}/" >保险柜</a>|<a href="{{ site.url }}/" >保险箱</a>|<a href="{{ site.url }}/" >家用保险柜</a>|<a href="{{ site.url }}/" >家用保险箱</a>|<a href="{{ site.url }}/" >保险柜十大品牌</a>|<a href="{{ site.url }}/Sitemap.xml" target="_blank">Sitemap</a></br>
+			<span class="copyinfo">网站建设维护与优化：<a href="http://www.8html.com/" target="_blank">8HTML</a></span>
+		</div>
+		<div class="fo_r">
+			<a class="weibo" href="http://e.weibo.com/qnnsafe" target="_blank">成为全能粉丝</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+<script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzkzODA0ODI2M18zNDU2NF80MDA4MzA0NTU1Xw"></script>
+<script type="text/javascript">
+$('img').bind('contextmenu', function(){return false;});
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc8fd9e36fdeb06bcc93a0732c667b6d8' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+</body>
+</html>

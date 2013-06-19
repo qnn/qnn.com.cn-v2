@@ -1,0 +1,56 @@
+---
+layout: default
+---
+	<div class="clear"></div>
+	<div id="slider" class="sliderkit photoslider-bullets">
+		<div class="sliderkit-nav">
+			<div class="sliderkit-nav-clip">
+				<ul>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="sliderkit-panels">
+			<div class="sliderkit-panel">
+				<a href="{{ site.url }}/b-4538.html"><img alt="保险柜" src="/images/index-banner01.jpg" width="1000" height="514" /></a>
+			</div>
+            <div class="sliderkit-panel">
+				<a href="{{ site.url }}/bw-6960.html"><img alt="家用保险柜" src="/images/index-banner02.jpg" width="1000" height="514" /></a>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="newsbar mt10px">
+		<div id="newsslider" class="sliderkit newslider-minimal">						
+			<div class="sliderkit-legend">全能新闻：</div>
+			<div class="sliderkit-panels">
+{dede:php}
+global $dsql;
+$dsql->SetQuery("SELECT id FROM `#@__arctype` WHERE `topid`=6");
+$dsql->Execute();
+$bT=array();
+while($row=$dsql->GetArray()) {
+$bT[]=$row['id'];
+}
+
+$dsql->SetQuery("SELECT * FROM `#@__archives` WHERE `typeid` IN(".implode(',',$bT).") ORDER BY `pubdate` DESC LIMIT 0,200");
+$dsql->Execute();
+while($row=$dsql->GetArray()) {
+$article=GetOneArchive($row['id']);
+echo "\t\t\t\t<div class=\"sliderkit-panel\"><a href=\"".$article['arcurl']."\" title=\"".$article['title']."\">".$article['title']."</a> ".date('Y年m月d日',$article['pubdate'])."</div>\n";
+}
+{/dede:php}
+			</div>
+			<div class="morenews"><a href="{{ site.url }}/news/">更多新闻</a></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="threecols mt10px">
+		<ul>
+			<li class="tcl"><a href="{{ site.url }}/b-7348.html"><img  alt="保险柜" src="/images/index-sbanner01.jpg" width="324" height="174" /></a></li>
+			<li class="tcc"><a href="{{ site.url }}/kl-4045.html"><img alt="保险箱" src="/images/index-sbanner02.jpg" width="324" height="174" /></a></li>
+			<li class="tcr"><a href="{{ site.url }}/bw-6960.html"><img alt="保险柜十大品牌" src="/images/index-sbanner03.jpg" width="324" height="174" /></a></li>
+		</ul>
+	</div>
+	<div class="clear"></div>

@@ -1,0 +1,47 @@
+---
+layout: default
+---
+	<div class="clear"></div>
+	<div class="navbar">
+		<a href="{{ site.url }}/">全能保险柜</a> &gt; <a href="/news/">新闻中心</a>
+	</div>
+	<div class="clear"></div>
+	<div class="procon">
+{% include about_menu.html %}
+		<div class="px2">
+			<div class="newsbarbox">
+				<img src="/images/newsbar.jpg" width="828" height="176" />
+			</div>
+			<div class="firstnews mt10px">
+{dede:php}
+global $dsql;
+$dsql->SetQuery("SELECT id FROM `#@__arctype` WHERE `topid`=".$refObj->TypeID);
+$dsql->Execute();
+$bT=array();
+while($row=$dsql->GetArray()) {
+	$bT[]=$row['id'];
+}
+if(count($bT)==0)$bT=array($refObj->TypeID);
+$dsql->SetQuery("SELECT * FROM `#@__archives` WHERE `typeid` IN(".implode(',',$bT).") ORDER BY `sortrank` DESC LIMIT 0,1");
+$dsql->Execute();
+while($row=$dsql->GetArray()) {
+$article=GetOneArchive($row['id']);
+echo "<div class=\"fnl\"><a href=\"".$article['arcurl']."\" title=\"".$article['title']."\"><img src=\"".(strlen($article['litpic'])>0?$article['litpic']:"/images/corp.jpg")."\" width=\"180\" height=\"135\" /></a></div>\n";
+echo "<div class=\"fnr\"><h3><a href=\"".$article['arcurl']."\" title=\"".$article['title']."\">".$article['title']."</a></h3>".$article['description']."...</div>\n";
+}
+{/dede:php}
+				<div class="clear"></div>
+			</div>
+			<div class="newslist mt10px">
+				<ul>
+{dede:list pagesize='50'}
+<li><em>[field:pubdate function="GetDateTimeMK(@me)"/]</em>[[field:typelink/]] <a href="[field:arcurl/]" class="title">[field:title/]</a></li>
+{/dede:list}
+				</ul>
+			</div>
+			<div class="newspaging">
+				<ul>{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}</ul>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>

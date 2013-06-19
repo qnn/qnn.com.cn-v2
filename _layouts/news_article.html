@@ -1,0 +1,29 @@
+---
+layout: default
+---
+	<div class="clear"></div>
+	<div class="navbar">
+		<a href="{{ site.url }}/">全能保险柜</a> &gt; <a href="/news/">新闻中心</a>
+	</div>
+	<div class="clear"></div>
+	<div class="procon">
+{% include about_menu.html %}
+		<div class="px2">
+			<div class="newsbarbox">
+				<img src="/images/newsbar.jpg" width="828" height="176" />
+			</div>
+			<div class="newscontent mt10px">
+				<div class="newsnav">
+
+				</div>
+				<div class="newshead">
+					<h2>{{ page.title }}</h2>
+					<em>{{ page.date | date:'%Y-%m-%d' }}</em>
+				</div>
+				<div class="newsbody">
+{{ content }}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
