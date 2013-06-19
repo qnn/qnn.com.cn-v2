@@ -13,34 +13,19 @@ layout: default
 				<img src="{{ site.image_cdn }}/images/newsbar.jpg" width="828" height="176" />
 			</div>
 			<div class="firstnews mt10px">
-{dede:php}
-global $dsql;
-$dsql->SetQuery("SELECT id FROM `#@__arctype` WHERE `topid`=".$refObj->TypeID);
-$dsql->Execute();
-$bT=array();
-while($row=$dsql->GetArray()) {
-	$bT[]=$row['id'];
-}
-if(count($bT)==0)$bT=array($refObj->TypeID);
-$dsql->SetQuery("SELECT * FROM `#@__archives` WHERE `typeid` IN(".implode(',',$bT).") ORDER BY `sortrank` DESC LIMIT 0,1");
-$dsql->Execute();
-while($row=$dsql->GetArray()) {
-$article=GetOneArchive($row['id']);
-echo "<div class=\"fnl\"><a href=\"".$article['arcurl']."\" title=\"".$article['title']."\"><img src=\"".(strlen($article['litpic'])>0?$article['litpic']:"{{ site.image_cdn }}/images/corp.jpg")."\" width=\"180\" height=\"135\" /></a></div>\n";
-echo "<div class=\"fnr\"><h3><a href=\"".$article['arcurl']."\" title=\"".$article['title']."\">".$article['title']."</a></h3>".$article['description']."...</div>\n";
-}
-{/dede:php}
+				{% for first in site.categories["news"] %}{% if forloop.first %}
+				<div class="fnl"><a href="{{ first.url }}" title="{{ first.title }}"><img src="{% if first.image %}{{ first.image }}{% else %}{{ site.image_cdn }}/images/corp.jpg{% endif %}" width="180" height="135" /></a></div>
+				<div class="fnr">
+					<h3><a href="{{ first.url }}" title="{{ first.title }}">{{ first.title }}</a></h3>
+					{{ first.excerpt | strip_html | truncate:100 }}
+				</div>
+				{% endif %}{% endfor %}
 				<div class="clear"></div>
 			</div>
 			<div class="newslist mt10px">
-				<ul>
-{dede:list pagesize='50'}
-<li><em>[field:pubdate function="GetDateTimeMK(@me)"/]</em>[[field:typelink/]] <a href="[field:arcurl/]" class="title">[field:title/]</a></li>
-{/dede:list}
+				<ul>{% for post in site.categories["news"] %}
+					<li><em>{{ post.date | date:'%Y-%m-%d' }}</em>[<a href="/news/{{ post.type_eng }}/">{{ post.type }}</a>] <a href="{{ post.url }}" class="title">{{ post.title }}</a></li>{% endfor %}
 				</ul>
-			</div>
-			<div class="newspaging">
-				<ul>{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}</ul>
 			</div>
 		</div>
 	</div>
