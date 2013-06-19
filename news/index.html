@@ -10,7 +10,7 @@ layout: default
 {% include about_menu.html %}
 		<div class="px2">
 			<div class="newsbarbox">
-				<img src="/images/newsbar.jpg" width="828" height="176" />
+				<img src="{{ site.image_cdn }}/images/newsbar.jpg" width="828" height="176" />
 			</div>
 			<div class="firstnews mt10px">
 {dede:php}
@@ -26,7 +26,7 @@ $dsql->SetQuery("SELECT * FROM `#@__archives` WHERE `typeid` IN(".implode(',',$b
 $dsql->Execute();
 while($row=$dsql->GetArray()) {
 $article=GetOneArchive($row['id']);
-echo "<div class=\"fnl\"><a href=\"".$article['arcurl']."\" title=\"".$article['title']."\"><img src=\"".(strlen($article['litpic'])>0?$article['litpic']:"/images/corp.jpg")."\" width=\"180\" height=\"135\" /></a></div>\n";
+echo "<div class=\"fnl\"><a href=\"".$article['arcurl']."\" title=\"".$article['title']."\"><img src=\"".(strlen($article['litpic'])>0?$article['litpic']:"{{ site.image_cdn }}/images/corp.jpg")."\" width=\"180\" height=\"135\" /></a></div>\n";
 echo "<div class=\"fnr\"><h3><a href=\"".$article['arcurl']."\" title=\"".$article['title']."\">".$article['title']."</a></h3>".$article['description']."...</div>\n";
 }
 {/dede:php}
