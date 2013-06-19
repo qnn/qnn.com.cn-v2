@@ -1,0 +1,67 @@
+---
+layout: default
+title: 装饰创新-创新中心
+permalink: /innovation/decorative/
+---
+	<div class="clear"></div>
+	<div class="navbar">
+		<a href="{{ site.url }}/">全能保险柜</a> &gt; <a href="/innovation/">创新中心</a> &gt; <a href="/innovation/decorative/">装饰创新</a>
+	</div>
+	<div class="clear"></div>
+	<div class="procon mt10px">
+		<div class="pc1">
+			<div class="pcon">
+				<ul>
+					<li><a href="/innovation/">创新中心</a></li>
+					<li><a href="/innovation/decorative/">装饰创新</a></li>
+					<li><a href="/innovation/safe/">安全创新</a></li>
+					<li><a href="/innovation/intelligent/">智能创新</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="pc2">
+			<h3 class="pc2tl">
+				装饰创新
+			</h3>
+			<div class="pc2hr"></div>
+			<div class="tab-content tab-content-1">
+				<h3>
+					您的风格，您的方式，您的选择</h3>
+				<img height="159" src="{{ site.image_cdn }}/images/decor.jpg" width="540" />
+				<p>
+					卓越研发，保持对家居潮流敏感的触感，在全新的全能保险柜里，您会发现我们的新装饰与外观设计，可以让您创造一个独特的安防世界，反映您的个人风格。通过新型的锁具设计、烤漆玻璃外观、轻触式按键及时尚的搭配，它的完美结合的风格和安全值得您的信任。</p>
+				<h3>
+					设计，不会打破你的预算</h3>
+				<p>
+					与时尚衣柜的整合搭配，您可以很容易的在您的时尚家居里添加一道亮丽的风景线，保险柜再也不是冷冰冰的黑灰色调，也无需再多的预算，我们的全新设计产品将可以完全胜任。</p>
+				<h3>
+					一个个性主义</h3>
+				<p>
+					我们深知保险柜需要家居化。这就是为什么我们的采用全新的钢琴烤漆外观设计、轻松触摸电子控制系统，上百项的搭配，向您提供数以千计的机会展示自己独特的风格。</p>
+			</div>
+			<div class="mt10px">
+				<div class="sbh">热销产品</div>
+				<div class="sbc sbc_hot2">
+					<ul>{% for post in site.categories["products"] limit:3 %}
+						<li><a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ site.prodimgs }}/{{ post.images[0] }}" width="160" height="160" /><br />{{ post.title }}</a></li>{% endfor %}
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="pc3">
+			<div class="sdpan">
+				<h3>最近的销售网点</h3>
+				<p>省：<select id="sdprov" class="sdselect"><option value="">请选择</option></select></p>
+				<p>市：<select id="sdcity" class="sdselect"><option value="">请选择</option></select></p>
+				<a id="sdfind" href="javascript:;" class="search">搜索</a>
+			</div>
+			<div class="sidebox mt10px">
+				<div class="sbh">全能微博</div>
+				<div class="sbc sbc_wb">
+					<iframe width="100%" height="800" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=800&fansRow=1&ptype=1&speed=100&skin=2&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1859145184&verifier=4a0b79d5&dpc=1"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>

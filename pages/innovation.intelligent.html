@@ -1,0 +1,74 @@
+---
+layout: default
+title: 智能创新-创新中心
+permalink: /innovation/intelligent/
+---
+	<div class="clear"></div>
+	<div class="navbar">
+		<a href="{{ site.url }}/">全能保险柜</a> &gt; <a href="/innovation/">创新中心</a> &gt; <a href="/innovation/intelligent/">智能创新</a>
+	</div>
+	<div class="clear"></div>
+	<div class="procon mt10px">
+		<div class="pc1">
+			<div class="pcon">
+				<ul>
+					<li><a href="/innovation/">创新中心</a></li>
+					<li><a href="/innovation/decorative/">装饰创新</a></li>
+					<li><a href="/innovation/safe/">安全创新</a></li>
+					<li><a href="/innovation/intelligent/">智能创新</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="pc2">
+			<h3 class="pc2tl">
+				智能创新
+			</h3>
+			<div class="pc2hr"></div>
+			<div class="tab-content tab-content-3">
+				<h3>
+					全新的安全理念</h3>
+				<p>
+					全能在不断发展的同时，也不断引入、创新各种智能化产品，为建设更高级别安全生活空间。不论是暴力开柜报警、自动联网报警，还是最新的物联网技术与生物识别技术，我们将不断的开发，以迎合您更高的要求。</p>
+				<img height="451" src="{{ site.image_cdn }}/images/comic1.jpg" width="540" />
+				<h3>
+					内置报警装置</h3>
+				<p>
+					全能保险柜在受到暴力开柜、非正常式移动时，就是触发内部报警装置，刺耳的声音最高可达100分贝。加装的无线联网报警功能，可以设置联网电话号码，触动报警的同时，自动打电话至您的手机进行报警，让您随心掌控。</p>
+				<img height="447" src="{{ site.image_cdn }}/images/comic2.jpg" width="540" />
+				<h3>
+					生物识别技术</h3>
+				<p>
+					突破传统的指纹识别技术，智能感应指纹处温度，防止非法情况出现，并有强大的脸部识别技术，可配合传统密码与IC卡的使用，阻止入侵者。</p>
+				<img height="497" src="{{ site.image_cdn }}/images/comic3.jpg" width="540" />
+				<h3>
+					千里眼技术</h3>
+				<p>
+					通过与国内高校的合作，全能全新推出智能化千里眼技术，不仅在开柜时可以实现拍照、录像存底查询功能，还可以随时通过网络智能系统随时监控实时情况、网络审批开柜权限、短信审批开柜权限等多种功能，迎合您各种的特别订制需求。</p>
+				<img height="529" src="{{ site.image_cdn }}/images/comic4.jpg" width="540" />
+			</div>
+			<div class="mt10px">
+				<div class="sbh">热销产品</div>
+				<div class="sbc sbc_hot2">
+					<ul>{% for post in site.categories["products"] limit:3 %}
+						<li><a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ site.prodimgs }}/{{ post.images[0] }}" width="160" height="160" /><br />{{ post.title }}</a></li>{% endfor %}
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="pc3">
+			<div class="sdpan">
+				<h3>最近的销售网点</h3>
+				<p>省：<select id="sdprov" class="sdselect"><option value="">请选择</option></select></p>
+				<p>市：<select id="sdcity" class="sdselect"><option value="">请选择</option></select></p>
+				<a id="sdfind" href="javascript:;" class="search">搜索</a>
+			</div>
+			<div class="sidebox mt10px">
+				<div class="sbh">全能微博</div>
+				<div class="sbc sbc_wb">
+					<iframe width="100%" height="800" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=800&fansRow=1&ptype=1&speed=100&skin=2&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=1859145184&verifier=4a0b79d5&dpc=1"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
