@@ -1,35 +1,7 @@
 ---
-layout: default
+layout: news_category
+news_category: enterprise-news
+news_category_name: 企业动态
 title: 企业动态-新闻中心
 permalink: /news/enterprise-news/
 ---
-	<div class="clear"></div>
-	<div class="navbar">
-		<a href="{{ site.url }}/">全能保险柜</a> &gt; <a href="/news/">新闻中心</a> &gt; <a href="/news/enterprise-news/">企业动态</a>
-	</div>
-	<div class="clear"></div>
-	<div class="procon">
-{% include about_menu.html %}
-		<div class="px2">
-			<div class="newsbarbox">
-				<img src="{{ site.image_cdn }}/images/newsbar.jpg" width="828" height="176" />
-			</div>
-			<div class="firstnews mt10px">
-				{% capture first_out %}no{% endcapture %}
-				{% for first in site.categories["news"] %}{% if first.type_eng == "enterprise-news" %}{% if first_out == "no" %}
-				<div class="fnl"><a href="{{ first.url }}" title="{{ first.title }}"><img src="{{ first.image }}{% if first.image %}{% else %}{{ site.image_cdn }}/images/corp.jpg{% endif %}" width="180" height="135" /></a></div>
-				<div class="fnr">
-					<h3><a href="{{ first.url }}" title="{{ first.title }}">{{ first.title }}</a></h3>
-					{{ first.excerpt | strip_html | truncate:100 }}
-				</div>{% capture first_out %}yes{% endcapture %}
-				{% endif %}{% endif %}{% endfor %}
-				<div class="clear"></div>
-			</div>
-			<div class="newslist mt10px">
-				<ul>{% for post in site.categories["news"] %}{% if post.type_eng == "enterprise-news" %}
-					<li><em>{{ post.date | date:'%Y-%m-%d' }}</em>[<a href="/news/{{ post.type_eng }}/">{{ post.type }}</a>] <a href="{{ post.url }}" class="title">{{ post.title }}</a></li>{% endif %}{% endfor %}
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="clear"></div>
