@@ -1,0 +1,38 @@
+---
+layout: default
+title: 招商加盟
+permalink: /franchise/
+---
+	<div class="clear"></div>
+	<div class="navbar">
+		<a href="{{ site.url }}/">全能保险柜</a> &gt; <a href="/franchise/">招商加盟</a>
+	</div>
+	<div class="clear"></div>
+	<div class="procon mt10px">
+		<div class="pc1">
+			<div class="pcon">
+				<div class="pcy">招商加盟</div>
+{% include franchise_menu.html %}
+			</div>
+		</div>
+		<div class="pc2x">
+		<h3 class="pc2tl">招商加盟</h3>
+		<div class="pc2hr2"></div>
+
+		<div class="gcon bgwht">
+			<p>暂无内容</p>
+		</div>
+
+		<div class="clear"></div>
+			<div class="mt10px">
+				<div class="sbh">热销产品</div>
+				<div class="sbc sbc_hot2 sbc_e">
+					<ul>{% for post in site.categories["products"] limit:4 %}
+						<li><a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ site.prodimgs }}/{{ post.images[0] }}" width="160" height="160" /><br />{{ post.title }}</a></li>{% endfor %}
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
