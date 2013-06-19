@@ -7,7 +7,7 @@ require 'sqlite3'
 posts_dir = "../products/_posts"
 
 begin
-  count = 0
+  #count = 0
   db = SQLite3::Database.open "database"
   stm = db.prepare "SELECT `id` FROM `8html_qnn_arctype` WHERE `topid`=12 OR `topid`=15"
   rs = stm.execute
@@ -59,8 +59,8 @@ manual: |
 ---
 content
     end
-    count = count + 1
-    exit if count > 10
+    #count = count + 1
+    #exit if count > 10
   end
 rescue SQLite3::Exception => e
   puts "Exception occurred."
