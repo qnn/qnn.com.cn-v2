@@ -1,0 +1,83 @@
+---
+layout: default
+title: 使用说明-服务与支持
+permalink: /support/manual/
+---
+	<div class="clear"></div>
+	<div class="navbar">
+		<a href="{{ site.url }}/">全能保险柜</a> &gt; <a href="/support/">服务与支持</a> &gt; <a href="/support/manual/">使用说明</a>
+	</div>
+	<div class="clear"></div>
+	<div class="procon mt10px">
+		<div class="pc1">
+			<div class="pcon">
+				<div class="pcy">服务与支持</div>
+{% include support_menu.html %}
+			</div>
+		</div>
+		<div class="pc2x">
+		<h3 class="pc2tl">使用说明</h3>
+		<div class="pc2hr2"></div>
+
+		<div class="gcon bgwht">
+			<table class="dltable">
+				<thead>
+					<tr>
+						<th>产品名称</th>
+						<th>下载</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>新皇冠</td>
+						<td><a class="dlicon" href="http://www.qnn.com.cn/cpsm/hg-sm.zip">下载</a></td>
+					</tr>
+					<tr>
+						<td>蓝精灵</td>
+						<td><a class="dlicon" href="http://www.qnn.com.cn/cpsm/bgx-sm.zip">下载</a></td>
+					</tr>
+					<tr>
+						<td>可拉柜</td>
+						<td><a class="dlicon" href="http://www.qnn.com.cn/cpsm/kl-sm.zip">下载</a></td>
+					</tr>
+					<tr>
+						<td>GLF高尔夫</td>
+						<td><a class="dlicon" href="http://www.qnn.com.cn/cpsm/glf-sm.zip">下载</a></td>
+					</tr>
+					<tr>
+						<td>GTX钢铁侠</td>
+						<td><a class="dlicon" href="http://www.qnn.com.cn/cpsm/gtx-sm.zip">下载</a></td>
+					</tr>
+					<tr>
+						<td>TGG铁金刚</td>
+						<td><a class="dlicon" href="http://www.qnn.com.cn/cpsm/tgg-sm.zip">下载</a></td>
+					</tr>
+					<tr>
+						<td>SJB铁管家</td>
+						<td><a class="dlicon" href="http://www.qnn.com.cn/cpsm/sjb-sm.zip">下载</a></td>
+					</tr>
+					<tr>
+						<td>FG钢将军</td>
+						<td><a class="dlicon" href="http://www.qnn.com.cn/cpsm/fg-sm.zip">下载</a></td>
+					</tr>
+					<tr>
+						<td>金刚锁</td>
+						<td><a class="dlicon" href="http://www.qnn.com.cn/cpsm/jgs-sm.zip">下载</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="clear"></div>
+			<div class="mt10px">
+				<div class="sbh">热销产品</div>
+				<div class="sbc sbc_hot2 sbc_e">
+					<ul>{% for post in site.categories["products"] limit:3 %}
+						<li><a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ site.prodimgs }}/{{ post.images[0] }}" width="160" height="160" /><br />{{ post.title }}</a></li>{% endfor %}
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
