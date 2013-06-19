@@ -50,12 +50,8 @@ permalink: /support/
 				<div class="sscol lcol">
 					<div class="chead">产品知识</div>
 					<table>
-						<tbody>
-							<tr><td><a href="/support/knowledge140.html" title="保险柜的用途">保险柜的用途</a></td><td>2012-11-26</td></tr>
-							<tr><td><a href="/support/knowledge139.html" title="保险柜3C认证">保险柜3C认证</a></td><td>2012-11-26</td></tr>
-							<tr><td><a href="/support/knowledge138.html" title="保险柜标准(GB、UL、EN、JIS)">保险柜标准(GB、UL、EN、JIS)</a></td><td>2012-11-26</td></tr>
-							<tr><td><a href="/support/knowledge137.html" title="分析窃贼盗窃保险柜的方法及预防">分析窃贼盗窃保险柜的方法及预防</a></td><td>2012-11-26</td></tr>
-							<tr><td><a href="/support/knowledge136.html" title="常见保险柜的优缺点">常见保险柜的优缺点</a></td><td>2012-11-26</td></tr>
+						<tbody>{% for post in site.categories["support"] limit:5 %}
+							<tr><td><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></td><td>{{ post.date | date:"%Y-%m-%d" }}</td></tr>{% endfor %}
 						</tbody>
 					</table>
 				</div>

@@ -14,18 +14,10 @@ more_scripts: ["/javascripts/etalage.js"]
 		<div class="px2">
 			<div class="newsbarbox">
 				<ul id="ab_eta">
-					<li>
-						<img class="etalage_source_image" src="{{ site.image_cdn }}/images/about01.jpg" width="660" height="296" />
-					</li>
-					<li>
-						<img class="etalage_source_image" src="{{ site.image_cdn }}/images/about02.jpg" width="660" height="296" />
-					</li>
-					<li>
-						<img class="etalage_source_image" src="{{ site.image_cdn }}/images/about03.jpg" width="660" height="296" />
-					</li>
-					<li>
-						<img class="etalage_source_image" src="{{ site.image_cdn }}/images/about04.jpg" width="660" height="296" />
-					</li>
+					<li><img class="etalage_source_image" src="{{ site.image_cdn }}/images/about01.jpg" width="660" height="296" /></li>
+					<li><img class="etalage_source_image" src="{{ site.image_cdn }}/images/about02.jpg" width="660" height="296" /></li>
+					<li><img class="etalage_source_image" src="{{ site.image_cdn }}/images/about03.jpg" width="660" height="296" /></li>
+					<li><img class="etalage_source_image" src="{{ site.image_cdn }}/images/about04.jpg" width="660" height="296" /></li>
 				</ul>
 			</div>
 			<div class="clear"></div>
@@ -35,8 +27,13 @@ more_scripts: ["/javascripts/etalage.js"]
 			<div class="clear"></div>
 			<div class="abpanels">
 				<div class="abpanel1">
-					<h3><em><a href="/news/">更多...</a></em>热点新闻</h3>
-
+					<h3><em><a href="/news/">更多...</a></em>热点新闻</h3>{% for post in site.categories["news"] limit:5 %}{% if forloop.first %}
+					<div class="apl"><a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ post.image }}{% if post.image %}{% else %}{{ site.image_cdn }}/images/corp.jpg{% endif %}" width="180" height="120" /></a></div>
+					<div class="apr">
+						<ul>{% endif %}
+							<li>{{ post.date | date:"%Y-%m-%d" }} <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>{% if forloop.last %}
+						</ul>
+					</div>{% endif %}{% endfor %}
 				</div>
 				<div class="abpanel2">
 				<div class="ab2content">
