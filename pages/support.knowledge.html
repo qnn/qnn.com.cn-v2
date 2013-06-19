@@ -1,0 +1,40 @@
+---
+layout: default
+title: 产品知识-服务与支持
+permalink: /support/knowledge/
+---
+	<div class="clear"></div>
+	<div class="navbar">
+		<a href="{{ site.url }}/">全能保险柜</a> &gt; <a href="/support/">服务与支持</a> &gt; <a href="/support/knowledge/">产品知识</a>
+	</div>
+	<div class="clear"></div>
+	<div class="procon mt10px">
+		<div class="pc1">
+			<div class="pcon">
+				<div class="pcy">服务与支持</div>
+{% include support_menu.html %}
+			</div>
+		</div>
+		<div class="pc2x">
+		<h3 class="pc2tl">产品知识</h3>
+		<div class="pc2hr2"></div>
+
+		<div class="ser_list">
+			<ul>{% for post in site.categories["support"] %}
+				<li><span class="articon"></span><a href="{{ post.url }}" class="title">{{ post.title }}</a><br />{{ post.description }}</li>{% endfor %}
+			</ul>
+		</div>
+
+		<div class="clear"></div>
+			<div class="mt10px">
+				<div class="sbh">热销产品</div>
+				<div class="sbc sbc_hot2 sbc_e">
+					<ul>{% for post in site.categories["products"] limit:4 %}
+						<li><a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ site.prodimgs }}/{{ post.images[0] }}" width="160" height="160" /><br />{{ post.title }}</a></li>{% endfor %}
+					</ul>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
