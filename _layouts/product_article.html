@@ -105,55 +105,20 @@ layout: default
 				<div class="rtp">
 					<h3>{{ page.type }}系列</h3>
 					<ul class="rtpul">
-					{dede:php}
-					$body = $refObj->Fields['body'];
-					
-					$pre=substr($body,0,strpos($body,"<hr />"));
-					global $restx;
-					$restx=substr($body,strpos($body,"<hr />")+strlen("<hr />"));
-					$pre2=substr($pre, strpos($pre,"规格：")+strlen("规格："));
-					$pos=strpos($pre2,"<br />")===FALSE?strpos($pre2,"</p>"):strpos($pre2,"<br />");
-					$result="<li>规格：".Html2Text(substr($pre2,0,$pos))."</li>\n";
-					$pre2=substr($pre, strpos($pre,"厚度：")+strlen("厚度："));
-					$pos=strpos($pre2,"<br />")===FALSE?strpos($pre2,"</p>"):strpos($pre2,"<br />");
-					$result.="<li>厚度：".Html2Text(substr($pre2,0,$pos))."</li>\n";
-					$pre2=substr($pre, strpos($pre,"净重：")+strlen("净重："));
-					$pos=strpos($pre2,"<br />")===FALSE?strpos($pre2,"</p>"):strpos($pre2,"<br />");
-					$result.="<li>净重：".Html2Text(substr($pre2,0,$pos))."</li>\n";
-					
-global $dsql;
-$dsql->SetQuery("SELECT * FROM `#@__archives` WHERE `typeid`=".$refObj->Fields['typeid']);
-$dsql->Execute();
-$RRR=array();
-while($row=$dsql->GetArray()) {
-$RRR[]=$row;
-}
-if (count($RRR)>0) $result.="<li><div class=\"clear\">请选择型号：</div>";
-foreach($RRR as $row){
-$article=GetOneArchive($row['id']);
-//$result .= "<a class=\"otherp\" href=\"".$article['arcurl']."\" title=\"".$article['title']."\"><b></b><em>".mb_substr($article['title'], 0, 30, 'UTF-8')."</em><i></i></a>\n";
-$result .= "<a class=\"otherq".($row['id']==$refObj->Fields['id']?" otherqcur":"")."\" href=\"".$article['arcurl']."\" title=\"".$article['title']."\">".mb_substr($article['title'], 0, 30, 'UTF-8')."</a>\n";
-}
-if (count($RRR)>0) $result.="<div class=\"clear\"></div></li>\n";
-					
-					$result.="<li class=\"mt20px\"><a class=\"taobao\" target=\"_blank\" href=\"http://www.qnn.com.cn/stores/\">点击购买</a></li>\n";
-					echo $result;
-					{/dede:php}
+						<li>规格：{{ page.specs }}</li>
+						<li>厚度：{{ page.thickness }}</li>
+						<li>净重：{{ page.weight }}</li>
+						<li><div class="clear">请选择型号：</div>
+{% for post in site.categories[page.category] %}
+							<a class="otherq {% if post.name == page.name %}otherqcur{% endif %}" href="{{ post.url }}" title="{{ post.name }}">{{ post.name }}</a>
+{% endfor %}
+							<div class="clear"></div></li>
+						<li class="mt20px"><a class="taobao" target="_blank" href="http://www.qnn.com.cn/stores/">点击购买</a></li>
 					</ul>
 				</div>
 				<div class="lfp">
-					<ul id="etalage">
-					{dede:php}
-					global $restx;
-					$pre=substr($restx,0,strpos($restx,"<hr />"));
-					$restx=substr($restx,strpos($restx,"<hr />")+strlen("<hr />"));
-					$pre=str_replace("<br />", "{{BR}}",$pre);
-					$pre=Html2Text($pre);
-					$pre=explode("{{BR}}",$pre);
-					foreach ($pre as $pre_i) {
-					echo "<li><img class=\"etalage_source_image\" src=\"".$pre_i."\" /></li>";
-					}
-					{/dede:php}
+					<ul id="etalage">{% for image in page.images %}
+						<li><img class="etalage_source_image" src="{{ image }}" /></li>{% endfor %}
 					</ul>
 				</div>
 				<div class="clear"></div>
@@ -168,16 +133,15 @@ if (count($RRR)>0) $result.="<div class=\"clear\"></div></li>\n";
 				<div class="clear"></div>
 				<div class="pc2hr"></div>
 				<div class="maincontent mt10px">
-					{dede:php}
-					global $restx;
-					$pre=substr($restx,0,strpos($restx,"<hr />"));
-					echo "<div class=\"mc mc1\">".$pre."</div>";
-					$restx=substr($restx,strpos($restx,"<hr />")+strlen("<hr />"));
-					$pre=substr($restx,0,strpos($restx,"<hr />"));
-					echo "<div class=\"mc mc2 hidden\">".$pre."</div>";
-					$restx=substr($restx,strpos($restx,"<hr />")+strlen("<hr />"));
-					echo "<div class=\"mc mc3 hidden\">".$restx."</div>";
-					{/dede:php}
+					<div class="mc mc1">
+						{{ page.features | markdownify }}
+					</div>
+					<div class="mc mc2 hidden">
+						{{ page.spec_details | markdownify }}
+					</div>
+					<div class="mc mc3 hidden">
+						{{ page.manual | markdownify }}
+					</div>
 					<div class="mc mc4 hidden">
 						<h2>常见问题</h2>
 						<h3>输入密码无反应、显示屏或指示灯无显示：</h3>

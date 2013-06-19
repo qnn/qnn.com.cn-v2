@@ -7,3 +7,5 @@ title: 全能保险柜官网-保险柜,保险箱,家用保险柜箱,保险柜十
 permalink: /:categories/:title.html
 
 image_cdn: http://www.qnn.com.cn
+
+markdown: rdiscount
