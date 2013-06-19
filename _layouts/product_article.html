@@ -191,23 +191,8 @@ more_scripts: ["/javascripts/etalage.js"]
 			<div class="sidebox mt10px">
 				<div class="sbh">热销产品</div>
 				<div class="sbc sbc_hot">
-					<ul>
-					{dede:php}
-global $dsql;
-$dsql->SetQuery("SELECT id FROM `#@__arctype` WHERE `topid`=12");
-$dsql->Execute();
-$bT=array();
-while($row=$dsql->GetArray()) {
-	$bT[]=$row['id'];
-}
-
-$dsql->SetQuery("SELECT * FROM `#@__archives` WHERE `typeid` IN(".implode(',',$bT).") ORDER BY RAND() LIMIT 0,5");
-$dsql->Execute();
-while($row=$dsql->GetArray()) {
-$article=GetOneArchive($row['id']);
-echo "<li><a href=\"".$article['arcurl']."\" title=\"".$article['title']."\"><img src=\"".$article['litpic']."\" width=\"180\" height=\"180\" /><br />".mb_substr($article['title'], 0, 30, 'UTF-8')."</a></li>\n";
-}
-					{/dede:php}
+					<ul>{% for post in site.categories["products"] limit:4 %}
+						<li><a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ site.prodimgs }}/{{ post.images[0] }}" width="160" height="160" /><br />{{ post.title }}</a></li>{% endfor %}
 					</ul>
 				</div>
 			</div>

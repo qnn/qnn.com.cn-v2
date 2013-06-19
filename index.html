@@ -24,23 +24,8 @@ layout: default
 	<div class="newsbar mt10px">
 		<div id="newsslider" class="sliderkit newslider-minimal">						
 			<div class="sliderkit-legend">全能新闻：</div>
-			<div class="sliderkit-panels">
-{dede:php}
-global $dsql;
-$dsql->SetQuery("SELECT id FROM `#@__arctype` WHERE `topid`=6");
-$dsql->Execute();
-$bT=array();
-while($row=$dsql->GetArray()) {
-$bT[]=$row['id'];
-}
-
-$dsql->SetQuery("SELECT * FROM `#@__archives` WHERE `typeid` IN(".implode(',',$bT).") ORDER BY `pubdate` DESC LIMIT 0,200");
-$dsql->Execute();
-while($row=$dsql->GetArray()) {
-$article=GetOneArchive($row['id']);
-echo "\t\t\t\t<div class=\"sliderkit-panel\"><a href=\"".$article['arcurl']."\" title=\"".$article['title']."\">".$article['title']."</a> ".date('Y年m月d日',$article['pubdate'])."</div>\n";
-}
-{/dede:php}
+			<div class="sliderkit-panels">{% for post in site.categories["news"] limit:200 %}
+				<div class="sliderkit-panel"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> {{ post.date | date:"%Y年%m月%d日" }}</div>{% endfor %}
 			</div>
 			<div class="morenews"><a href="{{ site.url }}/news/">更多新闻</a></div>
 		</div>
