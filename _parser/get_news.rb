@@ -15,7 +15,7 @@ begin
   types = rs.to_a.join ","
   stm.close if stm
   stm = db.prepare "SELECT `ar`.`title`,`ar`.`keywords`,`ar`.`description`,`ar`.`id`,\
-  `aa`.`body`,`at`.`typename`,`at`.`typedir`,`ar`.`pubdate` FROM `8html_qnn_archives` AS `ar` \
+  `aa`.`body`,`at`.`typename`,`at`.`typedir`,`ar`.`pubdate`,`ar`.`litpic` FROM `8html_qnn_archives` AS `ar` \
   LEFT JOIN `8html_qnn_addonarticle` AS `aa` ON `aa`.`aid`=`ar`.`id` \
   LEFT JOIN `8html_qnn_arctype` AS `at` ON `at`.`id`=`ar`.`typeid` \
   WHERE `ar`.`typeid` IN (#{types})"
@@ -39,6 +39,7 @@ type_eng: #{typedir}
 title: #{row[0]}
 keywords: #{row[1]}
 description: #{row[2]}
+image: #{row[8]}
 ---
 #{body}
 content

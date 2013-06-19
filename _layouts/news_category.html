@@ -16,7 +16,7 @@ title: 新闻中心
 			<div class="firstnews mt10px">
 				{% capture first_out %}no{% endcapture %}
 				{% for first in site.categories["news"] %}{% if first.type_eng == page.type_eng %}{% if first_out == "no" %}
-				<div class="fnl"><a href="{{ first.url }}" title="{{ first.title }}"><img src="{{ first.image }}{% if first.image %}{% else %}{{ site.image_cdn }}/images/corp.jpg{% endif %}" width="180" height="135" /></a></div>
+				<div class="fnl"><a href="{{ first.url }}" title="{{ first.title }}"><img src="{{ site.image_cdn }}{% if first.image %}{{ first.image }}{% else %}/images/corp.jpg{% endif %}" width="180" height="135" /></a></div>
 				<div class="fnr">
 					<h3><a href="{{ first.url }}" title="{{ first.title }}">{{ first.title }}</a></h3>
 					{{ first.excerpt | strip_html | truncate:100 }}
