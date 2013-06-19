@@ -72,7 +72,7 @@ permalink: /support/manual/
 			<div class="mt10px">
 				<div class="sbh">热销产品</div>
 				<div class="sbc sbc_hot2 sbc_e">
-					<ul>{% for post in site.categories["products"] limit:3 %}
+					<ul>{% for post in site.categories["products"] limit:4 %}
 						<li><a href="{{ post.url }}" title="{{ post.title }}"><img src="{{ site.prodimgs }}/{{ post.images[0] }}" width="160" height="160" /><br />{{ post.title }}</a></li>{% endfor %}
 					</ul>
 					<div class="clear"></div>
