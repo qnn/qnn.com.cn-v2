@@ -15,7 +15,7 @@ layout: default
 			<div class="vidslist mt10px">
 				<ul>
 {% for post in site.categories["videos"] %}
-<li><a href="{{ post.url }}" class="title"><img src="{{ post.image }}" width="200" height="150" /><br />{{ post.title }}</a></li>
+<li><a href="{{ post.url }}" class="title"><img src="{{ site.image_cdn }}{{ post.image }}" width="200" height="150" /><br />{{ post.title }}</a></li>
 {% endfor %}
 				</ul>
 			</div>
