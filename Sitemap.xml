@@ -1,30 +1,2397 @@
----
-layout: nil
----
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-   <loc>{{ site.URL }}</loc>
-   <lastmod>{{ site.time | date:'%Y-%m-%d' }}</lastmod>
+   <loc>http://www.qnn.com.cn/</loc>
+   <lastmod>2013-06-13</lastmod>
    <changefreq>daily</changefreq>
    <priority>1.0</priority>
-</url>{% for sp in site.pages %}{% capture lvl %}{{ sp.url | append:'index.html' | split:'/' | size }}{% endcapture %}{% if lvl == '3' %}
+</url>
 <url>
-   <loc>{{ site.URL }}{{ sp.url | remove:'index.html' }}</loc>
-   <lastmod>{{ site.time | date:'%Y-%m-%d' }}</lastmod>
+   <loc>http://www.qnn.com.cn/about/</loc>
+   <lastmod>2013-06-13</lastmod>
    <changefreq>daily</changefreq>
    <priority>0.8</priority>
-</url>{% endif %}{% endfor %}{% for sp in site.pages %}{% capture lvl %}{{ sp.url | append:'index.html' | split:'/' | size }}{% endcapture %}{% if lvl > '3' %}
+</url>
 <url>
-   <loc>{{ site.URL }}{{ sp.url | remove:'index.html' }}</loc>
-   <lastmod>{{ site.time | date:'%Y-%m-%d' }}</lastmod>
+   <loc>http://www.qnn.com.cn/innovation/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.8</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/cases/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.8</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.8</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.8</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/social/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.8</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/videos/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.8</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/join/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.8</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/contact/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.8</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/about/intro/</loc>
+   <lastmod>2013-06-13</lastmod>
    <changefreq>daily</changefreq>
    <priority>0.6</priority>
-</url>{% endif %}{% endfor %}{% for post in site.posts %}
+</url>
 <url>
-   <loc>{{ site.URL }}{{ post.url }}</loc>
-   <lastmod>{{ site.time | date:'%Y-%m-%d' }}</lastmod>
+   <loc>http://www.qnn.com.cn/about/history/</loc>
+   <lastmod>2013-06-13</lastmod>
    <changefreq>daily</changefreq>
    <priority>0.6</priority>
-</url>{% endfor %}
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/about/tao/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/about/honors/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/innovation/decorative/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/innovation/safe/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/innovation/intelligent/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/manual/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/clean/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/faq/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/knowledge/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/service-center/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/report/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/feedback/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/enterprise-news/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/media-reports/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/brand-activities/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/industry-news/</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>daily</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bw-6960.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/cs-2018d.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/cs-2221d.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/cs-2520c.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/cs-4021c.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/b-4538.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/b-5440.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/b-7348.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/cw-7348.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/zf-4538br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/zf-4938br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/gtx-3345.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/gtx-4542.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/gtx-5842.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/gtx-6845.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/hg-2740.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/hg-3342.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/hg-4538.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/tgg-2040br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/tgg-2045br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/tgg-2740br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/tgg-3342br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/tgg-4538br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/tgg-4938br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/kl-4045.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/dm-185640.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/glf-3340.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/glf-4540.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/glf-5842.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/glf-7042.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/glf-7550.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/ws-108.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/es-2318w.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/asafe.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sk-2045.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/mi-2045.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/cm-2045.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/itg-2040.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/itg-3342.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/itg-5840.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bgx-5840.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-2940br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-3542br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-3236br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-40hbr.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-40br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-43br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-48br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-52br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-53br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-58br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-1630br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-2243br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bgx-d-40jl.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bgx-d-47jl.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bgx-d-52jl.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bgx-d-63jl.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bgx-d-73jl.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bgx-d-80jl.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bgx-d-s80jl.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bgx-d-100jl.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/dm-2146.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/ct-1211.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/ct-4013.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bgx-2535.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/cki-253525.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/mg-2045.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/qn-2043.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fpc-3040sc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fpc-3448sc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fpc-3448-sc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fpc-4030sc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fpc-4334sc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fpc-4834sc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fpc-11460sc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fpc-11870sc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fpc-13070sc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fpc-15075sc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fpc-130110sc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fpc-166110sc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/tgg-5840br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/tgg-6642br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/tgg-7645br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/hg-5840.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/hg-6842.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/hg-7645d.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/hg-8045.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/hg-9150.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/hg-11860.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/hg-15870.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/glf-8550.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/gtx-9050.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/gtx-11860.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/gtx-15870.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-3236br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-40hbr.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-40br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-43br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-48br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-52br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-53br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-58br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-1630br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sjb-2243br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-100br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-5840br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-6842br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-8045br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-9150br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-9150d.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-11860br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-15870br.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/if-1212sc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/if-1500c.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/if-2500c.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/if-3000c.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/za-18090.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bmg-8001ab.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bmg-8002ab.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bmg-8003ab.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bmg-7545ab.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bmg-9055ab.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/frd-21.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/frd-31.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/frd-42.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/qn-2043zh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/ct-1211h.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/ct-4013zh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/ct-4018zh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sk-2045zh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/mi-2045uzh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/mq-2045zh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/cm-2045zh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/es-2043zh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/mg-2043zh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/mh-2043zh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/dm-15640.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/mk-2043zh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/mb-2045zh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/ma-2045zh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/ct-4013me.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/mf-2043zh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/dm-2146zh.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/h-06.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/h-12.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/h-15.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/dg-7645d.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/dg-7645s.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/dg-9150d.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/dg-9150s.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/dg-6442ds.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/us-1206k.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/us-1ck.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/us-2ck.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/us-3ck.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/rh-1612kc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/rh-2014cke.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/rh-2410ck.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/rh-3020cc.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/f-1614c.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/f-2014cke.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/f-2714cke.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/f-2720ick.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/f-2720ilk.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/f-3020ccee.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/f-3020ce.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/f-3214ccee.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/f-3214ccmeem.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/f-4020ilk.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/jkm(cs)-1020-n.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/jkm(b)-1020-n.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/jkm(cs)-1020-n.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/ydjk.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/yhbgg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/xjtbj.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/atm.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bp-9050.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bp-6747.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/zy-7581.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/zy-6091.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-6030f.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-6024f.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-3001.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-3002.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-6001.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-6002.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-6006.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/fg-153.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/pxsydqg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/dyg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/znqdg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/s-qdg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/s-qdzhg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/sa-qdg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/e-qg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/c-bqdg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/c-qdg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/d-ltdyg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/znrysb.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/znspzw.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/znbmg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/bldzycg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/znzwycg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/gyk-ycg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/ic-cwg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/znsjg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/mzgyg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/dzwjg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/zwjcg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/znzwtbjcq.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/tmjcg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/rf-cqg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/wlcqg.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/wm.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news378.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news377.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news375.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news374.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news373.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news372.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news371.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news370.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news369.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news368.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news367.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news365.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news364.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news363.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news362.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news361.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news360.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news359.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news358.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news357.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news356.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news355.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news354.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news353.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news352.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news351.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news350.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news349.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news348.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news346.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news345.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news344.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news343.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news342.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news341.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news340.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news339.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news338.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news337.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news336.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news335.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news334.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news333.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news332.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news331.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news330.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news329.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news328.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news327.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news326.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news325.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news324.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news323.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news322.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news321.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news320.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news319.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news318.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news317.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news316.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news315.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news314.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news313.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news312.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news311.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news310.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news309.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news308.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news307.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news306.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news305.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news302.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news301.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news300.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news299.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news298.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news297.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news296.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news295.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news294.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news293.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news286.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news285.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news282.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news281.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news280.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news279.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news278.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news277.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news276.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news275.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news274.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news273.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news272.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news271.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news270.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news269.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news268.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news267.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news266.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news110.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news109.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news108.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news107.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news106.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news105.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news104.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news103.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news102.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news101.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news100.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news99.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news98.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news97.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news96.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news95.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news94.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news93.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news92.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news91.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news90.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news89.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news88.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news87.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news86.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news85.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news84.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news83.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news82.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news81.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news80.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news79.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news8.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news7.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/news/qnn-news2.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/knowledge140.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/knowledge139.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/knowledge138.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/knowledge137.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/knowledge136.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/knowledge135.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/knowledge134.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/knowledge133.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/knowledge132.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/support/knowledge131.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/videos/videos376.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/videos/videos304.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/videos/videos303.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/videos/videos292.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/videos/videos291.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/videos/videos290.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/videos/videos289.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/videos/videos288.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/videos/videos287.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/videos/videos265.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/videos/videos264.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
+<url>
+   <loc>http://www.qnn.com.cn/videos/videos263.html</loc>
+   <lastmod>2013-06-13</lastmod>
+   <changefreq>weekly</changefreq>
+   <priority>0.6</priority>
+</url>
 </urlset>
