@@ -24,7 +24,7 @@ layout: nil
 <url>
    <loc>{{ site.URL }}{{ post.url }}</loc>
    <lastmod>{{ site.time | date:'%Y-%m-%d' }}</lastmod>
-   <changefreq>daily</changefreq>
+   <changefreq>weekly</changefreq>
    <priority>0.6</priority>
 </url>{% endfor %}
 </urlset>
