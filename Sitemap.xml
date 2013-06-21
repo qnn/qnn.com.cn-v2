@@ -18,7 +18,7 @@ layout: nil
 <url>
    <loc>{{ site.URL }}{{ sp.url | remove:'index.html' }}</loc>
    <lastmod>{{ site.time | date:'%Y-%m-%d' }}</lastmod>
-   <changefreq>daily</changefreq>
+   <changefreq>weekly</changefreq>
    <priority>0.6</priority>
 </url>{% endif %}{% endfor %}{% for post in site.posts %}
 <url>
