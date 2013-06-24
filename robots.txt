@@ -13,4 +13,4 @@ Disallow: /favicon.ico
 Disallow: /stores.json
 Disallow: /survey.php
 
-Sitemap: http://www.qnn.com.cn/Sitemap.xml
+Sitemap: http://www.qnnsafe.com/Sitemap.xml
