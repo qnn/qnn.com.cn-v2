@@ -47,8 +47,6 @@ Update
     $ cd ../net.cn-utils
     $ bash login.sh -u hmu123456 -p 1234567890
 
-    $ bash upload.sh -f ../images-v2 -d
-
     $ bash upload.sh -f ../qnn.com.cn-v2/_site -d
 
 Requirements
