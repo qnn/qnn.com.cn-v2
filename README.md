@@ -37,6 +37,20 @@ You may need to use [net.cn-utils](https://github.com/caiguanhao/net.cn-utils) t
     # upload static files
     $ bash upload.sh -f ../qnn.com.cn-v2/_site -d
 
+Update
+------
+
+    $ cd /srv/qnn.com.cn-v2
+    $ git pull origin master
+    $ jekyll build
+
+    $ cd ../net.cn-utils
+    $ bash login.sh -u hmu123456 -p 1234567890
+
+    $ bash upload.sh -f ../images-v2 -d
+
+    $ bash upload.sh -f ../qnn.com.cn-v2/_site -d
+
 Requirements
 ------------
 
