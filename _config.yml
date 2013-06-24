@@ -1,18 +1,18 @@
 relative_permalinks: false
 
 # comment this if you want to browse locally
-# url: http://www.qnn.com.cn
+url: http://www.qnn.com.cn
 
 # this should be the same as url
-URL: http://www.qnn.com.cn
+URL: http://www.qnnsafe.com
 
 title: 全能保险柜官网-保险柜,保险箱,家用保险柜箱,保险柜十大品牌
 
 permalink: /:categories/:title.html
 
-image_cdn: http://www.qnn.com.cn
+image_cdn: http://www.qnnsafe.com
 
-prodimgs: http://www.qnn.com.cn/image-pro
+prodimgs: http://www.qnnsafe.com/image-pro
 
 markdown: rdiscount
 

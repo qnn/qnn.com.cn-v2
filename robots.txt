@@ -5,6 +5,7 @@ Disallow: /image-news/
 Disallow: /image-pro/
 Disallow: /image-videos/
 Disallow: /images/
+Disallow: /cpsm/
 Disallow: /survey/
 Disallow: /uploads/
 Disallow: /bdsitemap.txt

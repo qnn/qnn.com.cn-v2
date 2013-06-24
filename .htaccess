@@ -1,0 +1,7 @@
+RewriteEngine on
+
+RewriteCond %{http_host} ^qnn.com.cn [nc]
+RewriteRule ^(.*)$ http://www.qnn.com.cn/$1 [L,R=301]
+
+RewriteCond %{http_host} ^qnnsafe.com [nc]
+RewriteRule ^(.*)$ http://www.qnnsafe.com/$1 [L,R=301]
