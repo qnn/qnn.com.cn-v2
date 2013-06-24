@@ -21,7 +21,7 @@ You may need to use [net.cn-utils](https://github.com/caiguanhao/net.cn-utils) t
     $ cd /srv
     $ git clone git://github.com/qnn/qnn.com.cn-v2.git
     $ git clone git://github.com/qnn/images-v2.git
-    $ git clone git://github.com/qnn/net.cn-utils.git
+    $ git clone git://github.com/caiguanhao/net.cn-utils.git
 
     # build website
     $ cd /srv/qnn.com.cn-v2
