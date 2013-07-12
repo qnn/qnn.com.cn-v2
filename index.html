@@ -25,7 +25,7 @@ full_title: 全能保险柜官网-保险柜,保险箱,家用保险柜箱,保险�
 	<div class="newsbar mt10px">
 		<div id="newsslider" class="sliderkit newslider-minimal">						
 			<div class="sliderkit-legend">全能新闻：</div>
-			<div class="sliderkit-panels">{% for post in site.categories["news"] limit:200 %}
+			<div class="sliderkit-panels">{% for post in site.categories["news"] limit:300 %}
 				<div class="sliderkit-panel"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> {{ post.date | date:"%Y年%m月%d日" }}</div>{% endfor %}
 			</div>
 			<div class="morenews"><a href="{{ site.url }}/news/">更多新闻</a></div>
