@@ -19,7 +19,7 @@ permalink: /news/
 				<div class="fnl"><a href="{{ first.url }}" title="{{ first.title }}"><img src="{{ site.image_cdn }}{% if first.image %}{{ first.image }}{% else %}/images/corp.jpg{% endif %}" width="180" height="135" /></a></div>
 				<div class="fnr">
 					<h3><a href="{{ first.url }}" title="{{ first.title }}">{{ first.title }}</a></h3>
-					{{ first.excerpt | strip_html | truncate:100 }}
+					{{ first.excerpt | strip_html | truncate:300 }}
 				</div>
 				{% endif %}{% endfor %}
 				<div class="clear"></div>
