@@ -3,6 +3,10 @@ qnn.com.cn-v2
 
 Jekyll version of [qnn.com.cn-v1](https://github.com/qnn/qnn.com.cn-v1).
 
+Please note that this repository is not being actively maintained.
+
+![qnn com cn-v2](https://f.cloud.github.com/assets/1284703/2059891/2908c582-8be3-11e3-94c3-b25c2b96378c.jpg)
+
 How to use
 ----------
 
